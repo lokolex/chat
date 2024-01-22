@@ -1,7 +1,7 @@
 /* bot */
 
 .wrapper {
-  max-width: 60%;
+  max-width: 55%;
   display: flex;
   gap: 12px;
 }
@@ -10,7 +10,7 @@
   position: relative;
   padding: 4px 8px;
   border-radius: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   width: 100%;
   display: grid;
   z-index: 3;
@@ -65,4 +65,10 @@
   /* -ms-transform: skew(0deg, -45deg);
   -webkit-transform: skew(0deg, -45deg); */
   transform: skew(45deg, -45deg);
+}
+
+@media (max-width: 475px) {
+  .wrapper {
+    max-width: 90%;
+  }
 }

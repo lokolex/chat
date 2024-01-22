@@ -50,7 +50,7 @@ export const initialData: IMessagesData = {
       },
       {
         id: '8',
-        text: 'That works- I was actually planning toget a smoothie anyways 👍',
+        text: 'That works- I was actually planning to get a smoothie anyways 👍',
         time: '12:03 PM',
         name: 'Janet',
         position: 'Engineering',

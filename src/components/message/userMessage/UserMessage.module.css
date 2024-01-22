@@ -3,10 +3,11 @@
   position: relative;
   padding: 4px 8px;
   border-radius: 6px;
-  margin-bottom: 12px;
-  max-width: 50%;
+  margin-bottom: 16px;
+  max-width: 55%;
   display: grid;
   z-index: 3;
+  cursor: pointer;
 }
 
 .message::after {
@@ -60,8 +61,19 @@
   border-left-color: #007aff;
   border-right: 0;
   right: -8px;
-  top: -4px;
+  top: -4.4px;
   -ms-transform: skew(0deg, -45deg);
   -webkit-transform: skew(0deg, -45deg);
   transform: skew(0deg, -45deg);
+}
+
+.tools {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 475px) {
+  .message {
+    max-width: 90%;
+  }
 }

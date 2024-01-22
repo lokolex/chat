@@ -2,7 +2,11 @@ import { IMessage } from '@/store/types';
 import UserMessage from './userMessage/UserMessage';
 import BotMessage from './botMessage/BotMessage';
 
-const Message = (props: IMessage) => {
+export interface MessageProps extends IMessage {
+  date: string;
+}
+
+const Message = (props: MessageProps) => {
   const { name } = props;
 
   return <>{name === 'user' ? <UserMessage {...props} /> : <BotMessage {...props} />}</>;

@@ -15,4 +15,6 @@ export interface IMessagesData {
 export interface IMessagesState {
   data: IMessagesData;
   addMessage: (date: string, msg: IMessage) => void;
+  getAllMessages: () => IMessage[];
+  deleteMessage: (date: string, id: string) => void;
 }

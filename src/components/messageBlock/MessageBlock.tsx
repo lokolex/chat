@@ -18,7 +18,7 @@ const MessageBlock = ({ title, messages }: MessageBlockProps) => {
           key={message.id}
           className={`${styles.wrapper} ${message.name === 'user' ? styles.user : styles.bot}`}
         >
-          <Message {...message} />
+          <Message date={title} {...message} />
         </div>
       ))}
     </div>
