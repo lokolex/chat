@@ -1,0 +1,20 @@
+.title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666668;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  align-items: flex-end;
+}
+
+.bot {
+  align-items: flex-start;
+}

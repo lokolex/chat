@@ -1,0 +1,68 @@
+/* bot */
+
+.wrapper {
+  max-width: 60%;
+  display: flex;
+  gap: 12px;
+}
+
+.message-bot {
+  position: relative;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  width: 100%;
+  display: grid;
+  z-index: 3;
+}
+
+.message-bot::after {
+  position: absolute;
+  display: block;
+  width: 0;
+  content: '';
+  border: 9px solid transparent;
+}
+
+.bot {
+  background-color: #f2f2f7;
+  color: #2c2c2e;
+  border-top-left-radius: 0px;
+  grid-template-columns: auto 50px;
+}
+
+.bot-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.bot-title span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666668;
+  margin-left: 10px;
+}
+
+.bot-text {
+  grid-row: 2 / 3;
+  font-size: 14px;
+}
+
+.bot-time {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  color: #666668;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.message-bot.bot::after {
+  border-left-color: #f2f2f7;
+  border-right: 0;
+  left: -5px;
+  top: -4.5px;
+  /* -ms-transform: skew(0deg, -45deg);
+  -webkit-transform: skew(0deg, -45deg); */
+  transform: skew(45deg, -45deg);
+}

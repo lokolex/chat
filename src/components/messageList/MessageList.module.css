@@ -1,0 +1,8 @@
+.main {
+  position: relative;
+  flex: 1 0 auto;
+  background-color: #fff;
+  height: 150px;
+  overflow: scroll;
+  padding: 0 24px;
+}

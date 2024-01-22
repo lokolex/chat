@@ -1,0 +1,29 @@
+.footer {
+  flex: 0 0 auto;
+  border-top: 2px solid #e5e5ea;
+  background-color: #fff;
+  padding: 7px 20px;
+  /* display: flex;
+  align-items: center; */
+}
+
+.input > input {
+  font-size: 14px;
+}
+
+.input > input::placeholder {
+  font-size: 14px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+button.send {
+  padding: 0;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}
