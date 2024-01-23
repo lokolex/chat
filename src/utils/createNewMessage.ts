@@ -6,6 +6,7 @@ export const createNewMessage = (
   name: string,
   text: string,
   online: boolean,
+  imgUrl: string = '',
   position?: string
 ): IMessage => {
   if (!position) {
@@ -15,6 +16,7 @@ export const createNewMessage = (
       text,
       time: getCurrentTime(),
       online,
+      imgUrl,
     };
   } else {
     return {
@@ -24,6 +26,7 @@ export const createNewMessage = (
       time: getCurrentTime(),
       online,
       position,
+      imgUrl,
     };
   }
 };

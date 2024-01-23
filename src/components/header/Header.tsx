@@ -11,9 +11,13 @@ const icons = ['Janet-Product', 'Janet-Engineering', 'Aubrey-Product', 'Jav-Engi
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Avatar.Group>
+      <Avatar.Group style={{ width: '84px' }}>
         {icons.map((item) => (
-          <Avatar key={item} icon={<IconComponent id={item} />} />
+          <Avatar
+            key={item}
+            style={{ width: '26px', height: '26px' }}
+            icon={<IconComponent id={item} />}
+          />
         ))}
       </Avatar.Group>
 

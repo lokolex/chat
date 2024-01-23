@@ -4,6 +4,7 @@ export interface IMessage {
   text: string;
   time: string;
   online: boolean;
+  imgUrl: string;
   position?: string;
 }
 

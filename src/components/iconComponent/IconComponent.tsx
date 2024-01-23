@@ -14,13 +14,13 @@ interface IconComponentProps {
 const IconComponent = ({ id }: IconComponentProps) => {
   switch (id) {
     case 'Janet-Product':
-      return <Image src={FirstIcon} alt="Janet-Product" width={32} height={32} />;
+      return <Image src={FirstIcon} alt="Janet-Product" />;
     case 'Janet-Engineering':
-      return <Image src={SecondIcon} alt="Janet-Engineering" width={32} height={32} />;
+      return <Image src={SecondIcon} alt="Janet-Engineering" />;
     case 'Aubrey-Product':
-      return <Image src={ThirdIcon} alt="Aubrey-Product" width={32} height={32} />;
+      return <Image src={ThirdIcon} alt="Aubrey-Product" />;
     case 'Jav-Engineering':
-      return <Image src={BotIcon} alt="Jav-Engineering" width={32} height={32} />;
+      return <Image src={BotIcon} alt="Jav-Engineering" />;
     case 'at':
       return <Image src={AtIcon} alt="at" width={16} height={16} style={{ cursor: 'pointer' }} />;
     default:
