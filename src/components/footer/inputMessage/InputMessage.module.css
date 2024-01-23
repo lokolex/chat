@@ -1,0 +1,20 @@
+.input > input {
+  font-size: 14px;
+}
+
+.input > input::placeholder {
+  font-size: 14px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+button.send {
+  padding: 0;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}

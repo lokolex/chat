@@ -7,6 +7,12 @@ const useMessages = create<IMessagesState>()(
   persist(
     (set, get) => ({
       data: initialData,
+      editData: {
+        isEdit: false,
+        editDate: '',
+        editText: '',
+        messageId: '',
+      },
       addMessage: (date, msg) =>
         set((state) => {
           const dates = Object.keys(state.data);
@@ -45,6 +51,52 @@ const useMessages = create<IMessagesState>()(
               },
             };
           }
+        }),
+      onEditMessage: (date, text, messageId) =>
+        set((state) => {
+          return {
+            data: { ...state.data },
+            editData: {
+              isEdit: true,
+              editDate: date,
+              editText: text,
+              messageId,
+            },
+          };
+        }),
+      closeEditMessage: () =>
+        set((state) => {
+          return {
+            data: { ...state.data },
+            editData: {
+              isEdit: false,
+              editDate: '',
+              editText: '',
+              messageId: '',
+            },
+          };
+        }),
+      editMessage: (date, text, messageId) =>
+        set((state) => {
+          const newMessages = state.data[date].messages.map((msg) => {
+            if (msg.id === messageId) {
+              msg.text = text;
+            }
+            return msg;
+          });
+
+          return {
+            data: {
+              ...state.data,
+              [date]: { messages: newMessages },
+            },
+            editData: {
+              isEdit: false,
+              editDate: '',
+              editText: '',
+              messageId: '',
+            },
+          };
         }),
     }),
     {
