@@ -23,7 +23,8 @@
 
 .menu {
   flex-basis: 84px;
-  text-align: end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: 475px) {

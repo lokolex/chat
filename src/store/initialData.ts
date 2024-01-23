@@ -8,12 +8,14 @@ export const initialData: IMessagesData = {
         text: 'Hi team 👋',
         time: '11:31 AM',
         name: 'user',
+        online: true,
       },
       {
         id: '2',
         text: 'Anyone on for lunch today',
         time: '11:31 AM',
         name: 'user',
+        online: true,
       },
       {
         id: '3',
@@ -21,12 +23,14 @@ export const initialData: IMessagesData = {
         time: '11:35 AM',
         name: 'Jav',
         position: 'Engineering',
+        online: false,
       },
       {
         id: '4',
         text: 'I am down for whatever!',
         time: '11:36 PM',
         name: 'user',
+        online: true,
       },
       {
         id: '5',
@@ -34,6 +38,7 @@ export const initialData: IMessagesData = {
         time: '11:45 AM',
         name: 'Aubrey',
         position: 'Product',
+        online: true,
       },
       {
         id: '6',
@@ -41,12 +46,14 @@ export const initialData: IMessagesData = {
         time: '11:46 AM',
         name: 'Aubrey',
         position: 'Product',
+        online: true,
       },
       {
         id: '7',
         text: 'Agreed',
         time: '11:52 PM',
         name: 'user',
+        online: true,
       },
       {
         id: '8',
@@ -54,6 +61,7 @@ export const initialData: IMessagesData = {
         time: '12:03 PM',
         name: 'Janet',
         position: 'Engineering',
+        online: false,
       },
       {
         id: '9',
@@ -61,6 +69,7 @@ export const initialData: IMessagesData = {
         time: '12:04 PM',
         name: 'Janet',
         position: 'Product',
+        online: true,
       },
     ],
   },

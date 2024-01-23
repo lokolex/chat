@@ -22,7 +22,9 @@ const Header = () => {
         <div className={styles.subtitle}>last seen 45 minutes ago</div>
       </div>
 
-      <EllipsisOutlined style={{ color: '#666668', fontSize: '20px', fontWeight: 'bold' }} />
+      <div className={styles.menu}>
+        <EllipsisOutlined style={{ color: '#666668', fontSize: '20px', fontWeight: 'bold' }} />
+      </div>
     </header>
   );
 };

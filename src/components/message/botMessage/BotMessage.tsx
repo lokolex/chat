@@ -4,10 +4,10 @@ import { Avatar } from 'antd';
 import styles from './BotMessage.module.css';
 import IconComponent from '@/components/iconComponent/IconComponent';
 
-const BotMessage = ({ position, name, text, time }: IMessage) => {
+const BotMessage = ({ position, name, text, time, online }: IMessage) => {
   return (
     <div className={styles.wrapper}>
-      <div style={{ width: '32px' }}>
+      <div className={`${styles.avatar} ${online ? styles.online : null}`}>
         <Avatar size="default" icon={<IconComponent id={`${name}-${position}`} />} />
       </div>
       <div className={`${styles['message-bot']} ${styles.bot}`}>

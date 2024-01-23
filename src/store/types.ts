@@ -3,6 +3,7 @@ export interface IMessage {
   name: string;
   text: string;
   time: string;
+  online: boolean;
   position?: string;
 }
 

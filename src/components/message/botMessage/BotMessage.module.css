@@ -6,6 +6,34 @@
   gap: 12px;
 }
 
+.avatar {
+  position: relative;
+  width: 32px;
+}
+
+.avatar span > img {
+  width: 32px;
+  height: 32px;
+}
+
+.online {
+  position: relative;
+}
+
+.online::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  background-color: #34c759;
+  position: absolute;
+  top: 22px;
+  right: -2px;
+  z-index: 25;
+}
+
 .message-bot {
   position: relative;
   padding: 4px 8px;
