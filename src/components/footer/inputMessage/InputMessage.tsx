@@ -8,10 +8,9 @@ import { getCurrentDate } from '@/utils/getCurrentDate';
 import PrefixComponent from '../prefixComponent/PrefixComponent';
 import IconComponent from '@/components/iconComponent/IconComponent';
 import { createNewMessage } from '@/utils/createNewMessage';
+import { sendBotMessage } from '@/utils/sendBotMessage';
 
 import styles from './InputMessage.module.css';
-import { sendBotMessage } from '@/utils/sendBotMessage';
-import Image from 'next/image';
 
 const InputMessage = () => {
   const [value, setValue] = useState('');

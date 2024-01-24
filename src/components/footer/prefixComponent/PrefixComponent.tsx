@@ -1,5 +1,5 @@
 import { SmileOutlined } from '@ant-design/icons';
-import { Button, Popover } from 'antd';
+import { Popover } from 'antd';
 import { emojiData } from './emojiData';
 
 import styles from './PrefixComponent.module.css';

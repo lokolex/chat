@@ -1,12 +1,18 @@
+import { motion } from 'framer-motion';
 import { IMessage } from '@/store/types';
 import { Avatar } from 'antd';
+import IconComponent from '@/components/iconComponent/IconComponent';
 
 import styles from './BotMessage.module.css';
-import IconComponent from '@/components/iconComponent/IconComponent';
 
 const BotMessage = ({ position, name, text, time, online }: IMessage) => {
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      initial={{ x: '-200%' }}
+      animate={{ x: '0' }}
+      exit={{ x: '-200%' }}
+      className={styles.wrapper}
+    >
       <div className={`${styles.avatar} ${online ? styles.online : null}`}>
         <Avatar size="default" icon={<IconComponent id={`${name}-${position}`} />} />
       </div>
@@ -17,7 +23,7 @@ const BotMessage = ({ position, name, text, time, online }: IMessage) => {
         <div className={styles['bot-text']}>{text}</div>
         <div className={styles['bot-time']}>{time}</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

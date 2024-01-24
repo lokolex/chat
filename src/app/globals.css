@@ -27,8 +27,3 @@ a {
 [ant-click-animating-without-extra-node='true']::after {
   display: none !important;
 }
-
-/* .ant-btn:focus,
-.ant-btn.focus {
-  display: none !important;
-} */

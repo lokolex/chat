@@ -41,6 +41,7 @@
   margin-bottom: 16px;
   width: 100%;
   display: grid;
+  column-gap: 8px;
   z-index: 3;
 }
 
@@ -74,6 +75,7 @@
 .bot-text {
   grid-row: 2 / 3;
   font-size: 14px;
+  line-height: 20px;
 }
 
 .bot-time {
@@ -90,8 +92,6 @@
   border-right: 0;
   left: -5px;
   top: -4.5px;
-  /* -ms-transform: skew(0deg, -45deg);
-  -webkit-transform: skew(0deg, -45deg); */
   transform: skew(45deg, -45deg);
 }
 
